@@ -1,38 +1,56 @@
-.App {
+.Weather {
+  padding: 35px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  background: linear-gradient(
+    106.5deg,
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
+}
+
+Weather .overview {
+  margin-bottom: 20px;
+}
+
+Weather .d-flex weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+Weather #temperature {
+  color: rgb(33, 33, 33);
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 400px;
+}
+
+Weather .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+Weather .weather-forecast {
+  margin-top: 20px;
   text-align: center;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+Weather .weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+Weather.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+Weather.weather-forecast-temperatures {
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+Weather.App {
+  margin: 20px;
 }
